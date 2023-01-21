@@ -24,18 +24,18 @@
 <body>
     <div class="container-fluid">
     <h1>Gerador de combinações númericas</h1>
-    <form id="form">
-      <label for="numbers">Insira os números a ser combinados (separados por vírgula):</label>
-      <input type="text" id="numbers" name="numbers">
+    <form id="form" class="form-control-*">
+      <label for="numbers"><h3>Insira os números a ser combinados (separados por vírgula):</h3></label>
+      <input type="text" class="form-control-lg" id="numbers" name="numbers">
       <span id="number-error" class="error"></span>
-      <br>
-      <label for="length">Insira de quantos numeros serão as combinações(ex: 6 vai gerar combinações de 6 a 6):</label>
-      <input type="number" id="length" name="length">
+      <br><p></p>
+      <label for="length"><h3>Insira de quantos numeros serão as combinações(ex: 6 vai gerar combinações de 6 a 6):</h3></label>
+      <input type="number" class="form-control-lg" id="length"  name="length">
       <span id="length-error" class="error"></span>
       <br><br>
-      <button type="button" onclick="generateCombinations()">Gerar combinações</button>
+      <button type="button" class="btn btn-dark" onclick="generateCombinations()">Gerar combinações</button>
     </form>
-    <h2>Combinações geradas:</h2>
+    <h2>Total de combinações geradas:</h2>
     <ul id="combinations"></ul>
     <p id="count"></p>
 </div>
