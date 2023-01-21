@@ -48,7 +48,7 @@
       <br><br>
       <button type="button" class="btn btn-dark" onclick="generateCombinations()">Gerar combinações</button>
     </form>
-    <h2>Total de combinações geradas:</h2>
+    <h2>Combinações geradas:</h2>
     <ul id="combinations"></ul>
     <p id="count"></p>
 </div>
@@ -98,7 +98,7 @@
   
         // Exibe o número de combinações geradas
         var count = document.getElementById("count");
-        count.textContent = "Combinações geradas: " + combinations.length;
+        count.textContent = "Total de combinações geradas: " + combinations.length;
       }
   
       function getCombinations(arr, len) {
